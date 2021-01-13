@@ -6,10 +6,10 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
--(YML-Playbooks/DVWA-Playbook.yml) -used to install DVWA servers
--(YML-Playbooks/Elk-Playbook.yml) -used to install ELK Server
-  -(YML-Playbooks/filebeat-playbook.yml) -used to install and configure Filebeat on ELK Server and DVWA Servers 
-  -(YML-Playbooks/metricbeat-playbook.yml) -used to install and configure Metricbeat on ELK Server and DVWA Server.
+- (YML-Playbooks/DVWA-Playbook.yml) -used to install DVWA servers
+- (YML-Playbooks/Elk-Playbook.yml) -used to install ELK Server
+  - (YML-Playbooks/filebeat-playbook.yml) -used to install and configure Filebeat on ELK Server and DVWA Servers 
+  - (YML-Playbooks/metricbeat-playbook.yml) -used to install and configure Metricbeat on ELK Server and DVWA Server.
 
 This document contains the following details:
 - Description of the Topologu
