@@ -39,12 +39,12 @@ It periodically collect metrics from the operating system and from services runn
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Jump Box   | Gateway                    | 10.0.0.4 | Linux (Ubuntu 18.04 LTS) |
-|------------|----------------------------|----------|--------------------------|
-| Web-1      | Web Server - Docker - DVWA | 10.0.0.5 | Linux (Ubuntu 18.04 LTS) |
-| Web-2      | Web Server - Docker - DVWA | 10.0.0.6 | Linux (Ubuntu 18.04 LTS) |
-| ELK-Server | ELK Stack                  | 10.1.0.5 | Linux (Ubuntu 18.04 LTS) |
-
+| Name       | Publicly Accessible    | Allowed IP Address                            |
+|------------|------------------------|-----------------------------------------------|
+| Jump-Box   | No                     | Personal IP Address                           |
+| Web-1      | Yes Thru Load Balancer | 104.209.32.221 LB <br>10.0.0.4 - JumpBox      |
+| Web-2      | Yes Thru Load Balancer | 104.209.32.221 LB<br>10.0.0.4 JumpBox         |
+| ELK-Server | No                     | 10.0.0.4 - JumpBox  <br>Personal IP/Port 5601 |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
