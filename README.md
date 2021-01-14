@@ -123,8 +123,6 @@ _How do I specify which machine to install the ELK server on versus which to ins
 _Which URL do you navigate to in order to check that the ELK server is running?_
  - http://publicip(elkserver):5601
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
- - ansible-playbook ./(____.yml)
 ### References
 
 Filebeat: Lightweight Log Analysis & Elasticsearch. (n.d.). Retrieved August 22, 2020, from https://www.elastic.co/beats/filebeat Metricbeat: Lightweight Shipper for Metrics. (n.d.). Retrieved August 22, 2020, from https://www.elastic.co/beats/metricbeat
