@@ -111,20 +111,20 @@ _Which file is the playbook?
   -![]Filebeat-Playbook.yml - Used to install and configure Filebeat on Elk Server and DVWA servers
   -![]Metricbeat-Playbook.yml - Used to install and configure Metricbeat on Elk Server and DVWA servers
 
-_Where do you copy it?_
+__Where do you copy it?_
 -/etc/ansible/
 
-_Which file do you update to make Ansible run the playbook on a specific machine? 
+_Which file do you update to make Ansible run the playbook on a specific machine?_ 
 -/etc/ansible/hosts.cfg
 
-How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+_How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 -/etc/ansible/hosts.cfg ensure you you have input your IP address for the specific machine you;d like to install the ELK server versus the Filebeats.
 
-_Which URL do you navigate to in order to check that the ELK server is running?
-http://publicip(elkserver):5601
+_Which URL do you navigate to in order to check that the ELK server is running?_
+-http://publicip(elkserver):5601
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-ansible-playbook ./(____.yml)
+-ansible-playbook ./(____.yml)
 ### References
 
 Filebeat: Lightweight Log Analysis & Elasticsearch. (n.d.). Retrieved August 22, 2020, from https://www.elastic.co/beats/filebeat Metricbeat: Lightweight Shipper for Metrics. (n.d.). Retrieved August 22, 2020, from https://www.elastic.co/beats/metricbeat
