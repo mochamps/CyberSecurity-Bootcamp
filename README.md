@@ -106,25 +106,25 @@ SSH into the control node and follow the steps below:
 - Update the configuration file to include the Private IP add of the ELK-Server to the ElasticSearch and Kibana Sections of the Configuration file. 
 - Run the playbook, and navigate to ELK-Server(Public IP:5601) to check that the installation worked as expected.
 
-_Which file is the playbook? 
--![ELK-Playbook](YML-Playbooks/ELK-Playbook.yml) - used to install ELK Server
-  -![Filebeat-Playbook](YML-Playbooks/Filebeat-Playbook.yml) - Used to install and configure Filebeat on Elk Server and DVWA servers
-  -![Metricbeat-Playbook](YML-Playbooks/Metricbeat-Playbook.yml) - Used to install and configure Metricbeat on Elk Server and DVWA servers
+Which file is the playbook? 
+- ![ELK-Playbook](YML-Playbooks/ELK-Playbook.yml) - used to install ELK Server
+  - ![Filebeat-Playbook](YML-Playbooks/Filebeat-Playbook.yml) - Used to install and configure Filebeat on Elk Server and DVWA servers
+  - ![Metricbeat-Playbook](YML-Playbooks/Metricbeat-Playbook.yml) - Used to install and configure Metricbeat on Elk Server and DVWA servers
 
-__Where do you copy it?_
- -/etc/ansible/
+_Where do you copy it?_
+ - /etc/ansible/
 
 _Which file do you update to make Ansible run the playbook on a specific machine?_ 
- -/etc/ansible/hosts.cfg
+ - /etc/ansible/hosts.cfg
 
 _How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
- -/etc/ansible/hosts.cfg ensure you you have input your IP address for the specific machine you;d like to install the ELK server versus the Filebeats.
+ - /etc/ansible/hosts.cfg ensure you you have input your IP address for the specific machine you;d like to install the ELK server versus the Filebeats.
 
 _Which URL do you navigate to in order to check that the ELK server is running?_
- -http://publicip(elkserver):5601
+ - http://publicip(elkserver):5601
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
- -ansible-playbook ./(____.yml)
+ - ansible-playbook ./(____.yml)
 ### References
 
 Filebeat: Lightweight Log Analysis & Elasticsearch. (n.d.). Retrieved August 22, 2020, from https://www.elastic.co/beats/filebeat Metricbeat: Lightweight Shipper for Metrics. (n.d.). Retrieved August 22, 2020, from https://www.elastic.co/beats/metricbeat
