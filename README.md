@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![](Images/Red-Team-Network.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
 - ![DVWA-Playbook](YML-Playbooks/DVWA-Playbook.yml) -used to install DVWA servers
 - ![ELK-Playbook](YML-Playbooks/Elk-Playbook.yml) -used to install ELK Server
@@ -102,17 +102,29 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the Filebeat-config.yml file to etc/ansible/files.
+- Update the configuration file to include the Private IP add of the ELK-Server to the ElasticSearch and Kibana Sections of the Configuration file. 
+- Run the playbook, and navigate to ELK-Server(Public IP:5601) to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+_Which file is the playbook? 
+-![]ELK-Playbook.yml - used to install ELK Server
+  -![]Filebeat-Playbook.yml - Used to install and configure Filebeat on Elk Server and DVWA servers
+  -![]Metricbeat-Playbook.yml - Used to install and configure Metricbeat on Elk Server and DVWA servers
+
+_Where do you copy it?_
+-/etc/ansible/
+
+_Which file do you update to make Ansible run the playbook on a specific machine? 
+-/etc/ansible/hosts.cfg
+
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+-/etc/ansible/hosts.cfg ensure you you have input your IP address for the specific machine you;d like to install the ELK server versus the Filebeats.
+
+_Which URL do you navigate to in order to check that the ELK server is running?
+http://publicip(elkserver):5601
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-
+ansible-playbook ./(____.yml)
 ### References
 
 Filebeat: Lightweight Log Analysis & Elasticsearch. (n.d.). Retrieved August 22, 2020, from https://www.elastic.co/beats/filebeat Metricbeat: Lightweight Shipper for Metrics. (n.d.). Retrieved August 22, 2020, from https://www.elastic.co/beats/metricbeat
