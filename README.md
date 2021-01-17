@@ -6,10 +6,10 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-- ![DVWA-Playbook](YML-Playbooks/DVWA-Playbook.yml) -used to install DVWA servers
-- ![ELK-Playbook](YML-Playbooks/Elk-Playbook.yml) -used to install ELK Server
-  - ![Filebeat-Playbook](YML-Playbooks/filebeat-playbook.yml) -used to install and configure Filebeat on ELK Server and DVWA Servers 
-  - ![Metricbeat-Playbook](YML-Playbooks/metricbeat-playbook.yml) -used to install and configure Metricbeat on ELK Server and DVWA Server.
+- [DVWA-Playbook](YML-Playbooks/DVWA-Playbook.yml) -used to install DVWA servers
+- [ELK-Playbook](YML-Playbooks/Elk-Playbook.yml) -used to install ELK Server
+  - [Filebeat-Playbook](YML-Playbooks/filebeat-playbook.yml) -used to install and configure Filebeat on ELK Server and DVWA Servers 
+  - [Metricbeat-Playbook](YML-Playbooks/metricbeat-playbook.yml) -used to install and configure Metricbeat on ELK Server and DVWA Server.
 
 This document contains the following details:
 - Description of the Topologu
@@ -107,9 +107,9 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to ELK-Server(Public IP:5601) to check that the installation worked as expected.
 
 Which file is the playbook? 
-- ![ELK-Playbook](YML-Playbooks/ELK-Playbook.yml) - used to install ELK Server
-  - ![Filebeat-Playbook](YML-Playbooks/Filebeat-Playbook.yml) - Used to install and configure Filebeat on Elk Server and DVWA servers
-  - ![Metricbeat-Playbook](YML-Playbooks/Metricbeat-Playbook.yml) - Used to install and configure Metricbeat on Elk Server and DVWA servers
+- [ELK-Playbook](YML-Playbooks/ELK-Playbook.yml) - used to install ELK Server
+  - [Filebeat-Playbook](YML-Playbooks/Filebeat-Playbook.yml) - Used to install and configure Filebeat on Elk Server and DVWA servers
+  - [Metricbeat-Playbook](YML-Playbooks/Metricbeat-Playbook.yml) - Used to install and configure Metricbeat on Elk Server and DVWA servers
 
 _Where do you copy it?_
  - /etc/ansible/
