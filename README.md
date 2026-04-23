@@ -1,8 +1,4 @@
-It looks like the README.md still hasn't appeared — the repo is still showing only the README.pdf. It's possible the file wasn't named exactly README.md (capitalization and extension matter), or it may not have been committed yet.
-That said, you mentioned you don't like the appearance — let me write you a much better, polished README that you can paste in. Here's a great one tailored for a cybersecurity job seeker:
-
-Copy everything below and paste it into your README.md on GitHub:
-markdown# 🔐 Cybersecurity Bootcamp – Portfolio of Assignments
+🔐 Cybersecurity Bootcamp – Portfolio of Assignments
 
 A collection of hands-on assignments completed during a 24-week Cybersecurity Bootcamp. 
 This portfolio covers a wide range of topics from threat analysis to penetration testing, 
